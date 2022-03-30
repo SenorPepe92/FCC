@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC Ex #2 - Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <div id ="container"> 
+    <header class="header">
+    <h1 id ="title"> freeCodeCamp Survey Form<h1>
+    <p id ="description">Thank you for taking the time to help us improve the platform </p> 
+    </header>
+    
+    <form id = "survey-form"> 
+      
+      <div class="survey-question">
+      <label id="name-label" for ="name"> Name </label><br>
+        <input type ="text" id="name" placeholder="Enter Your Name" required><br>
+      </div>
+      
+      <div class="survey-question">
+      <label id="email-label" for ="email"> Email </label><br>
+        <input type ="email" id="email" placeholder="Enter Your Email" required><br>
+      </div>
+        
+      <div class="survey-question">
+        <label id="number-label" for ="age"> Age</label><br>
+        <input type ="number" id="number" min="18" max="120" placeholder="Optional"><br>
+      </div>
+        
+      <div class="survey-question">  
+      <label id="dropdown-label" for="role">Which option best describes your current role</label><br>
+        <select id="dropdown">
+            <option value="fulltime">Fulltime</option>
+            <option value="casual">Casual</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="other">Other</option>
+         </select><br>
+      </div>
+        
+      <div class="survey-question">  
+      <label id="radio-label" for="recommendation"> Would you reccomend Free Code Camp to a friend </label><br>
+        <input type="radio" id="Highly Recommended" name="Recommendation" value="Highly Recommended"> 
+      <label for="Highly Recommended">Highly Recommended </label><br>
+        <input type="radio" id="Recommended" name="Recommendation" value="Recommended">
+      <label for="Recommended">Recommended </label><br>
+        <input type="radio" id="Not Recommended" name="Recommendation" value="Not Recommended">
+      <label for="Not Recommended">Not Recommended </label><br>
+      </div>
+        
+      <div class="survey-question">  
+      <label id="checkbox-label" for="Improvements"> What would you like to see improved?</label><br> 
+        <input type="checkbox" id="More Projects" name="improvements" value="more-projects">
+          <label for="More Projects">More Projects</label><br>
+        <input type="checkbox" id="Videos" name="improvements" value="video">
+          <label for="Videos">Videos</label><br>
+      </div>
+        
+      <div class="survey-question">
+      <label id="textarea-label" for="comments">Additional Comments</label> <br>
+        <textarea form="survey-form" id="comments" rows="5" cols="50">Enter your comments here...</textarea>
+      </div>
+    
+      <div class="survey-question">
+      <input type="submit" id="submit">
+      </div>
+      
+    </form>
+      
+  </div>
+</body>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
